@@ -2,7 +2,7 @@ sudo: false  # Use container-based infrastructure
 language: minimal
 python:
   - "2.7"
-  - "3.5"
+  - "3.6"
 before_install:
   # Commands below copied from: http://conda.pydata.org/docs/travis.html
   # We do this conditionally because it saves us some downloading if the
@@ -63,8 +63,8 @@ after_success:
 deploy:
   provider: pypi
   distributions: sdist
-  user: hammerlab
+  user: openvax
   password:
-    secure: "X4DhwpPp5OJDhejSLj3y+b/zjGgvKpaVh5DEo68HUoy6GKdTOmy2+QM1/tCQVt9fze5X2E849aNN9kfXUjHoeAd3OvFIzota3Bu6hOq+q2HKj6IB0mjB9p3b3kqDusBh9I/66MXApntrqZdN9ZOm/wjD0KHzGbBdvBz41hePsHw="
+    secure: "As7i/HLMKgHZKcAsTnn32wgH0cjuTJTfkh3T755Iv5b8i+TWNwduwZQdKP4DwRVoRJ/gYVHxgXbHzH1wGbQsqWfB7R2q2+rTJ0XcSm1T3+FbP6gh31fS3HEEEhLfhiOClgBfngiOeLsoAvXWZKnM+iC50iLeQ1u/kDokAg3eH9g="
   on:
     branch: master
